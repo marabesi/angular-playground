@@ -1,0 +1,16 @@
+<h1>
+  todo-list works!
+</h1>
+<form #taskForm="ngForm">
+  <input type="text" [(ngModel)]="task.name" name="taskName"/>
+  <button (click)="addTask()" type="submit">Create</button>
+</form>
+<ul>
+  <li *ngFor="let task of tasks | async">
+    <label>
+      {{ task.name }}
+
+      <input type="checkbox" [(ngModel)]="task.done" (change)="changeStatus(task)"/>
+    </label>
+  </li>
+</ul>

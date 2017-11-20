@@ -1,0 +1,17 @@
+<video class="video-player" #player>
+  <h1>Your browser doesn't have video support</h1>
+</video>
+
+<div class="action" *ngIf="isCameraAvailable">
+  <button class="button" (click)="takePhoto()">Photo !</button>
+  <button class="button" (click)="stop()">Stop</button>
+  <button class="button" (click)="resume()">Start</button>
+</div>
+
+<canvas id="canvas" #canvas width="800" height="600"></canvas>
+
+<ul>
+  <li class="photo-item" *ngFor="let photo of photosTaken">
+    <img src="{{ photo }}"/>
+  </li>
+</ul>
