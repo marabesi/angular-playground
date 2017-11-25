@@ -5,7 +5,7 @@ before_script:
 env:
   global:
   - GH_REPO="marabesi/angular-playground"
-script: docpad generate
+script: npm install && cd todo-list && ng build
 after_success:
   - test $TRAVIS_BRANCH = "master" &&
     test $TRAVIS_PULL_REQUEST = "false"
