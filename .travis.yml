@@ -7,7 +7,7 @@ before_script:
 env:
   global:
   - GH_REPO="marabesi/angular-playground"
-script: npm install -g sync-exec --prefix ./todo-list && npm install -g angular-cli --prefix ./todo-list && npm install --prefix ./todo-list && node ./todo-list/node_modules/@angular/cli/bin/ng build
-after_success:
-  - test $TRAVIS_BRANCH = "master" &&
-    test $TRAVIS_PULL_REQUEST = "false"
+script:
+  - npm install --prefix ./todo-list
+  - npm run build --prefix ./todo-list
+
