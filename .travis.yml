@@ -13,4 +13,7 @@ env:
 script:
   - npm install --prefix ./todo-list
   - npm run build --prefix ./todo-list
-
+  - npm install --prefix ./image-preload
+  - npm run build --prefix ./image-preload
+  - npm install --prefix ./camera-tracking
+  - npm run build --prefix ./camera-tracking
