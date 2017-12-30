@@ -1,3 +1,7 @@
+echo 'pulling from origin'
+git pull
+echo 'Done!'
+
 echo 'adding files...'
 git add -f ./todo-list/dist
 echo 'Done!'
