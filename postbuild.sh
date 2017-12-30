@@ -1,5 +1,11 @@
-git init
-#git remote add origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
+echo 'adding files...'
 git add -f ./todo-list/dist
+echo 'Done!'
+
+echo 'Commiting...'
 git commit -m "Deploy to Github Pages"
+echo 'Done!'
+
+echo 'Pushing changes to repo...'
 git push --force origin gh-pages
+echo 'Done!'
