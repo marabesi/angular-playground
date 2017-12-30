@@ -1,5 +1,5 @@
 echo 'pulling from origin'
-git pull
+git pull origin gh-pages
 echo 'Done!'
 
 echo 'adding files...'
