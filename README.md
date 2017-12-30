@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/marabesi/angular-playground.svg?branch=master)](https://travis-ci.org/marabesi/angular-playground)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4ff08ffc213f4f64925690661823c28f)](https://www.codacy.com/app/matheus-marabesi/angular-playground?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marabesi/angular-playground&amp;utm_campaign=Badge_Grade)
 
 ## Welcome to GitHub Pages
 
