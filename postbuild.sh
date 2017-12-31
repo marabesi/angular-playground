@@ -11,7 +11,7 @@ git commit -m "Deploy to Github Pages"
 echo 'Done!'
 
 echo 'pulling from origin'
-git pull origin gh-pages -f
+git pull origin gh-pages -f -X ours
 echo 'Done!'
 
 echo 'Pushing changes to repo...'
