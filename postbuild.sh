@@ -1,5 +1,5 @@
 echo 'Resetting'
-git reset --hard
+git checkout --force .
 echo 'Done!'
 
 echo 'adding files...'
