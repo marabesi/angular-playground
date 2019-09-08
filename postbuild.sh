@@ -1,19 +1,15 @@
-echo 'Resetting'
-git checkout --force .
-echo 'Done!'
+#!/bin/bash
 
-echo 'pulling from origin'
-git fetch --all
-echo 'Done!'
+remote_repo=${REPO_URL:-`git config remote.origin.url`}
+remote_branch="gh-pages"
 
-echo 'adding files...'
-git add -f ./todo-list/dist
-echo 'Done!'
+rm -fr .git && \
+git init && \
+git config user.name "$GIT_NAME" && \
+git config user.email "$GIT_EMAIL" && \
 
-echo 'Commiting...'
-git commit -m "Deploy to Github Pages"
-echo 'Done!'
+git add -f ./todo-list/dist && \
 
-echo 'Pushing changes to repo...'
-git push --force origin gh-pages
-echo 'Done!'
+git commit -m 'build' && \
+git push --force $remote_repo master:$remote_branch && \
+rm -fr .git
