@@ -8,8 +8,8 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./camera-tracking.component.css']
 })
 export class CameraTrackingComponent implements OnInit {
-  @ViewChild('player') player: any;
-  @ViewChild('canvas') canvas: ElementRef;
+  @ViewChild('player', {static: false}) player: any;
+  @ViewChild('canvas', {static: false}) canvas: ElementRef;
 
   isCameraAvailable: boolean = false;
   canvasContext: any;
