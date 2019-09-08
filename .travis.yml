@@ -9,7 +9,7 @@ after_script:
   - ./postbuild.sh
 env:
   global:
-  - GH_REPO="marabesi/angular-playground"
+  - GITHUB_REPO="marabesi/angular-playground"
 script:
   - npm install --prefix ./todo-list
   - npm run build --prefix ./todo-list
